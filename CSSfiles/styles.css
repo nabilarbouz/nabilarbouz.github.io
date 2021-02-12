@@ -1,0 +1,48 @@
+.headerDiv {
+  padding: 32px;
+}
+
+.card-img-top {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-img-top {
+  padding: 8px;
+}
+
+.bottom-container {
+  margin-bottom: 32px;
+}
+
+.previewBox {
+  display: none;
+  width: 100%;
+}
+
+#cardOne:hover + .previewBox,
+.previewBox:hover {
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+#sendButton {
+  margin-top: 8px;
+}
+
+#recoLogo {
+  width: 24rem;
+}
+
+.carouselImage {
+  max-width: 100%;
+}
+
+.carousel-caption h5 {
+  color: white;
+}
+
+.carousel-caption p {
+  color: white;
+}

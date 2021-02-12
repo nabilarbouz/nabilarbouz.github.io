@@ -1,0 +1,19 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "Portfolio project ",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./start.js"
+  },
+  "author": "Nabil Arbouz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.17",
+    "sendmail": "^1.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
