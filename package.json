@@ -8,12 +8,11 @@
   },
   "author": "Nabil Arbouz",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "nodemailer": "^6.4.17",
-    "sendmail": "^1.6.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
   }
 }
