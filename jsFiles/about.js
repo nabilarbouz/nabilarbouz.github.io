@@ -1,8 +1,10 @@
 const carouselInfoArray = [
   {
-    title: "Business Experience",
-    description:
-      "1.5 years Sales. 1.5 years Operations. 4 years Customer Service",
+    title: "School and Business Experience",
+    description: [
+      "1.5 years Sales. 1.5 years Operations. 4 years Customer Service.",
+      "Computer Science Courses: Algorithms, Data Structures and Abstractions, Mobile App Development, Object-Oriented Design, Web Development, C++ Programming Methodologies",
+    ],
   },
   {
     title: "Outdoors Enthusiast",
@@ -17,7 +19,11 @@ const carouselInfoArray = [
 
 for (let count = 1; count <= carouselInfoArray.length; count++) {
   let carousel = document.getElementById(`carousel${count}`);
-  carousel.innerHTML = `<h5>${carouselInfoArray[count - 1].title}<h5><p> ${
-    carouselInfoArray[count - 1].description
-  }</p>`;
+  if (count === 1) {
+    carousel.innerHTML = `<h5>${carouselInfoArray[0].title}<h5><p>${carouselInfoArray[0].description[0]}</p><p>${carouselInfoArray[0].description[1]}</p>`;
+  } else {
+    carousel.innerHTML = `<h5>${carouselInfoArray[count - 1].title}<h5><p> ${
+      carouselInfoArray[count - 1].description
+    }</p>`;
+  }
 }

@@ -12,14 +12,18 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="./CSSfiles/styles.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assests/myFavicon.ico"
+    />
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <h1 class="navbar-brand">Nabil Arbouz</h1>
+          <a class="navbar-brand" href="/">Nabil Arbouz</a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="navbar-nav">
@@ -28,10 +32,7 @@
                 </a>
               </li>
               <li class="navbar-nav">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./htmlFiles/about.html"
+                <a class="nav-link active" aria-current="page" href="about.html"
                   >About Me
                 </a>
               </li>
@@ -39,7 +40,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="./htmlFiles/contact.html"
+                  href="./contact.html"
                   >Contact
                 </a>
               </li>
@@ -54,6 +55,7 @@
                 </a>
               </li>
             </ul>
+            <span class="navbar-text" id="todaysDate">Today's Date:</span>
           </div>
         </div>
       </nav>
@@ -61,16 +63,19 @@
 
     <section class="container text-center">
       <div class="container">
-        <div class="row justify-content-lg-center">
-          <div class="col" id="headerDiv">
-            <h2 style="font-weight: 300">Welcome</h2>
-            <p style="font-size: 1.25rem; font-weight: 300">
+        <div class="row justify-content-lg-center mx-auto">
+          <div class="col-lg-6" id="headerDiv">
+            <h1 class="fw-light">Welcome to my Homepage!</h1>
+            <p class="lead text-muted">
               My name is Nabil. I am a software developer based in the San
-              Francisco Bay Area.
+              Francisco Bay Area. I am also a student at Northeastern University
+              pursing a Master's Degree in Computer Science.
             </p>
             <p>
-              I am also a student at Northeastern University pursing a Master's
-              Degree in Computer Science.
+              <a href="./about.html" class="btn btn-primary my-2">About me</a>
+              <a href="./contact.html" class="btn btn-secondary my-2"
+                >Contact me</a
+              >
             </p>
           </div>
         </div>
@@ -218,7 +223,7 @@
               <div class="card-body">
                 <h5 class="card-title">C++ projects</h5>
                 <p class="card-text">
-                  All of the projects and programs I've written in C/C++.
+                  Some of the projects and programs I've written in C++.
                 </p>
                 <a
                   href="https://github.com/nabilarbouz/c-fall2018"
@@ -241,8 +246,8 @@
               <div class="card-body">
                 <h5 class="card-title">C Command Shell</h5>
                 <p class="card-text">
-                  Homemade C command shell that allows you to emulate registers
-                  for loading and processing data.
+                  A homemade command shell written in C that allows you to
+                  emulate hardware registers for loading and processing data.
                 </p>
                 <a
                   href="https://github.com/nabilarbouz/C_CommandShell"
@@ -265,9 +270,9 @@
               <div class="card-body">
                 <h5 class="card-title">SeeFood</h5>
                 <p class="card-text">
-                  An iOS application that uses Apple's CoreML machine learning
-                  library to determine whether the picture taken by the user is
-                  a hot dog or not a hot dog!
+                  An iOS application built with xCode and Swift that uses
+                  Apple's CoreML machine learning library to determine whether
+                  the picture taken by the user is a hot dog or not a hot dog!
                 </p>
                 <a
                   href="https://github.com/nabilarbouz/SeeFood"
@@ -284,22 +289,22 @@
     </div>
 
     <footer>
-      <div class="container">
+      <div class="container bottom-container">
         <p>Made by Nabil.</p>
       </div>
     </footer>
 
-    <script src="../jsFiles/index.js" async defer></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
       integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
       crossorigin="anonymous"
       async
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./jsFiles/date.js"></script>
   </body>
 </html>
