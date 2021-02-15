@@ -9,19 +9,15 @@ const carouselInfoArray = [
     description: "Running, Soccer, Traveling, and Hiking",
   },
   {
-    title: "music",
+    title: "Music",
     description:
       "I am a music lover that enjoys everything from classical to rock to techno. A soundcloud with some of my tunes available upon request!",
   },
 ];
 
 for (let count = 1; count <= carouselInfoArray.length; count++) {
-  let carouselItemTitle = document.getElementById(`carousel${count}Title`);
-  let carouselItemDescription = document.getElementById(
-    `carousel${count}Description`
-  );
-
-  carouselItemTitle.textContent = carouselInfoArray[count - 1].title;
-  carouselItemDescription.textContent =
-    carouselInfoArray[count - 1].description;
+  let carousel = document.getElementById(`carousel${count}`);
+  carousel.innerHTML = `<h5>${carouselInfoArray[count - 1].title}<h5><p> ${
+    carouselInfoArray[count - 1].description
+  }</p>`;
 }
