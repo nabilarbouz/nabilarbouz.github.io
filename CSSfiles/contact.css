@@ -1,3 +1,9 @@
+/* contact page css */
+
 .brandLogo {
   margin-top: 8px;
+}
+
+#contactPageTitle {
+  font-weight: 300;
 }

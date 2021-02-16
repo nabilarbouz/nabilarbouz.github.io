@@ -1,21 +1,20 @@
-#headerDiv {
-  margin: 8px;
+/* global CSS */
+h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .bottom-container {
   margin-top: 8px;
-}
-
-.carouselImage {
-  max-width: 100%;
-}
-
-.carousel-caption h5 {
-  color: white;
-}
-
-.carousel-caption p {
-  color: white;
 }
 
 .myTextDescriptions {
@@ -23,19 +22,6 @@
   font-weight: 300;
 }
 
-h3 {
-  font-size: 1.25rem;
-  font-weight: 400;
-}
-
-#contactPageTitle {
-  font-weight: 300;
-}
-
-h2 {
-  font-weight: 300;
-}
-p {
-  font-size: 1.25rem;
-  font-weight: 300;
+#headerDiv {
+  margin: 8px;
 }
