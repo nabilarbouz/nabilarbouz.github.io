@@ -1,0 +1,27 @@
+/* global CSS */
+h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.bottom-container {
+  margin-top: 8px;
+}
+
+.myTextDescriptions {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+#headerDiv {
+  margin: 8px;
+}

@@ -1,18 +1,18 @@
 {
-  "name": "project1",
+  "name": "nabilhomepage",
   "version": "1.0.0",
-  "description": "Portfolio project ",
+  "description": "Homepage project ",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./start.js"
+    "start": "reload ./index.html"
   },
   "author": "Nabil Arbouz",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^7.2.0",
-    "nodemon": "^2.0.7",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "reload": "^3.1.1"
   }
 }
